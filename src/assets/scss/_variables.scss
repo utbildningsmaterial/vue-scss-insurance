@@ -1,0 +1,47 @@
+/* COLORS */
+
+$blue: #C7DDEA;
+$orange: #F17949;
+$yellow: #FAB131;
+$lightGrey: #EBEBEB;
+$grey: #A9A19E;
+$darkGrey: #777574;
+$white: #FFF;
+$black: #222;
+
+/* LAYOUT */
+$baseline: 4rem;
+
+
+/* COMMON STUFF */
+%center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+$round: .5rem;
+
+
+/* COMPONENTS */
+
+button {
+    appearance: none;
+    border: none;
+    background: $white;
+    color: $black;
+    padding: .8rem 2rem;
+    font-size: 1rem;
+    border-radius: 99rem;
+    margin: 1rem 0;
+
+    &:focus {
+        outline: none;
+    }
+
+    &:active {
+        background: $lightGrey;
+    }
+
+}

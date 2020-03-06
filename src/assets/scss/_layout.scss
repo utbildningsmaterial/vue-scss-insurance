@@ -1,0 +1,77 @@
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    margin: 0 auto;
+    max-width: 1000px;
+    grid-template-areas:
+    "top top top top top top"
+    ". navigation navigation navigation navigation ."
+    "customers customers customers customers customers customers";
+
+    #header {
+        grid-area: top;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: ($baseline * 4 ) ($baseline * 4 );
+        grid-template-areas: 
+        "hello learn"
+        "hello join";
+
+        .hello {
+            grid-area: hello;
+        }
+
+        .learn {
+            grid-area: learn;
+        }
+
+        .join { 
+            grid-area: join;
+        }
+    }
+
+    #navigation {
+        grid-area: navigation;
+        height: $baseline;
+        display: flex;
+
+        a {
+            flex: 1;
+            color: $grey;
+            @extend %center;
+            text-decoration: none;
+
+            &.router-link-active {
+                color: $black;
+                font-weight: 700;
+            }
+        }
+    }
+
+    #customers {
+        grid-area: customers;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: ($baseline * 4 ) ($baseline * 4 );
+        grid-template-areas:
+        "safety info"
+        "cards cards"
+        ;
+        
+        .safety {
+            grid-area: safety;
+        }
+
+        .info {
+            grid-area: info;
+        }
+
+        footer {
+            grid-area: cards;
+        }
+
+    }
+
+
+}

@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,700|Playfair+Display:700&display=swap');
+
+:root {
+    font-family: 'Fira Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+p {
+    line-height: 150%;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    margin: .5rem;
+}
+
+h1 {
+    font-size: 2.4rem;
+}
+
+h2 {
+    color: $white;
+}
